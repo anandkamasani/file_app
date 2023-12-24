@@ -32,6 +32,7 @@ public ResponseEntity<ResponseData> uploadFile(@RequestParam("file") MultipartFi
             .path("/download/")
             .path(attachment.getId())
             .toUriString();
+//this is post method in controller
 
     ResponseData responseData = new ResponseData(attachment.getFileName(),
             downloadURI, file.getContentType(),
